@@ -42,7 +42,7 @@ router.post("/signin", async (req, res) => {
 
 //login Route
 
-router.get("/login", async (req, res) => {
+router.post("/login", async (req, res) => {
   const { username, password } = req.body;
   const ExistingUser = await User.findOne({ username: username });
   if (!ExistingUser)

@@ -8,7 +8,7 @@ const taskAPI = require("./routes/taskRoute");
 const cors = require("cors");
 app.use(cors());
 app.use(express.json());
-const PORT = 3000;
+const PORT = 1000;
 app.get("/", (req, res) => {
   res.json({ message: "API working!" });
 });
